@@ -1,0 +1,31 @@
+# Copy this file to application-local.properties (gitignored) and fill in
+# real values. Never commit application-local.properties itself.
+
+# ===============================
+# DATABASE CONFIG (local nrc_live on SQLEXPRESS)
+# ===============================
+spring.datasource.url=jdbc:sqlserver://localhost\SQLEXPRESS;databaseName=nrc_live;encrypt=false
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.properties.hibernate.default_schema=nr
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+
+# ===============================
+# JWT CONFIG
+# ===============================
+jwtSecretKey=
+jwtTimeout=1800000
+
+# ===============================
+# CORS (Angular frontend origins)
+# ===============================
+allowed.origins=http://localhost:4200,http://localhost:4201
+
+# ===============================
+# Legacy password-encoding compatibility (cstep.nrcadmin.util.EncodeUtil salts)
+# Needed so existing nrc_users passwords keep working until PasswordCompat
+# silently rehashes them to bcrypt on next successful login.
+# ===============================
+nrc.legacy.salt-prefix=
+nrc.legacy.salt-suffix=

@@ -1,0 +1,14 @@
+target/
+*.class
+*.log
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+.vscode/
+
+# Real local secrets - never commit. Use application-local.properties.example instead.
+src/main/resources/application-local.properties
