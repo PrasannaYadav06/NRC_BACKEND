@@ -4,12 +4,12 @@
 # ===============================
 # DATABASE CONFIG (local nrc_live on SQLEXPRESS)
 # ===============================
-spring.datasource.url=jdbc:sqlserver://localhost\SQLEXPRESS;databaseName=nrc_live;encrypt=false
+spring.datasource.url=jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=nrc_live;encrypt=false
 spring.datasource.username=
 spring.datasource.password=
 spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
 spring.jpa.properties.hibernate.default_schema=nr
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
 
 # ===============================
 # JWT CONFIG
